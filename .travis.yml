@@ -33,9 +33,9 @@ before_install:
 - ./travis/init-travis-build.sh
 - chmod -R 777 ./gradlew
 install:
-- ./gradlew clean bootRepackage install --parallel -x test --stacktrace
+- ./gradlew clean install --parallel -x test --stacktrace
 script:
-- travis_wait sudo ./gradlew checkstyleTest test --stacktrace --parallel
+- travis_wait sudo ./gradlew -DskipCheckstyle=true -DskipTests=true --stacktrace --parallel
 after_success:
 - chmod -R 777 ./travis/deploy-to-sonatype.sh
 - ./travis/deploy-to-sonatype.sh
