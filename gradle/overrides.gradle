@@ -1,0 +1,6 @@
+
+/*
+  Override the version used by Spring boot.
+  As boot is upgraded, some of these enforcements below
+  may become unnecessary when/if version numbers match.
+ */

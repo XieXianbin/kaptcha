@@ -1,0 +1,54 @@
+ext.libraries = [
+        javax                   : [
+                dependencies.create("javax.servlet:javax.servlet-api:$javaxServletVersion") {
+                    force = true
+                }
+        ],
+        findbugscontrib         : dependencies.create("com.mebigfatguy.fb-contrib:fb-contrib:$findbugsContribVersion"),
+        findbugs                : dependencies.create("com.google.code.findbugs:findbugs:$findbugsVersion") {
+            force = true
+        },
+        findbugssec             : dependencies.create("com.h3xstream.findsecbugs:findsecbugs-plugin:$findbugsSecVersion"),
+        groovy                  : [
+                dependencies.create("org.codehaus.groovy:groovy-jsr223:$groovyVersion") {
+                    force = true
+                },
+                dependencies.create("org.codehaus.groovy:groovy-console:$groovyVersion") {
+                    force = true
+                },
+                dependencies.create("org.codehaus.groovy:groovy-groovysh:$groovyVersion") {
+                    force = true
+                }
+        ],
+        jhlabs                  : [
+                dependencies.create("com.jhlabs:filters:$jhlabsVersion") {
+                    force = true
+                }
+        ],
+        tests                   : [
+                dependencies.create("junit:junit:$junitVersion") {
+                    force = true
+                },
+                dependencies.create("org.json:json:$jsonVersion") {
+                    force = true
+                }
+        ],
+        log4j                   : [
+                dependencies.create("org.apache.logging.log4j:log4j-api:$log4jVersion") {
+                    force = true
+                },
+                dependencies.create("org.apache.logging.log4j:log4j-core:$log4jVersion") {
+                    force = true
+                },
+                dependencies.create("org.apache.logging.log4j:log4j-jcl:$log4jVersion") {
+                    force = true
+                },
+                dependencies.create("org.apache.logging.log4j:log4j-slf4j-impl:$log4jVersion") {
+                    exclude(group: "org.slf4j", module: "slf4j-api")
+                    force = true
+                },
+                dependencies.create("org.apache.logging.log4j:log4j-web:$log4jVersion"),
+                dependencies.create("org.slf4j:slf4j-api:$slf4jVersion"),
+                dependencies.create("org.slf4j:jul-to-slf4j:$slf4jVersion")
+        ],
+]
