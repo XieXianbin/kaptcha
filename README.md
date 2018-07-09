@@ -1,11 +1,10 @@
 kaptcha - A kaptcha generation engine.
 =====
 
-[![License](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/XieXianbin/kaptcha/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/XieXianbin/kaptcha.svg?branch=master)](https://travis-ci.org/XieXianbin/kaptcha)
+[![Build Status](https://travis-ci.org/xiexianbin/kaptcha.svg?branch=master)](https://travis-ci.org/xiexianbin/kaptcha)
 [![GitHub release](https://img.shields.io/github/release/xiexianbin/ueditor.svg)](https://github.com/XieXianbin/kaptcha/releases)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/xiexianbin/kaptcha.svg)](https://github.com/XieXianbin/kaptcha/pulls)
-
+[![License](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/xiexianbin/kaptcha/blob/master/LICENSE)
 
 Please see the website for more information about this project.
 
